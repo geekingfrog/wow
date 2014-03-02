@@ -1,0 +1,25 @@
+{
+  "name": "fortune-wheel",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dev-dependencies": {
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.2"
+  },
+  "devDependencies": {
+    "connect-livereload": "~0.3.2",
+    "express": "~3.4.8",
+    "grunt-reload": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-sass": "~0.11.0"
+  },
+  "dependencies": {
+    "grunt": "~0.4.2"
+  }
+}

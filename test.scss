@@ -1,0 +1,54 @@
+$elWidth: 100px;
+$elHeight: 100px;
+$elMargin: 20px;
+
+* {
+  box-sizing: border-box;
+}
+
+.scene {
+  perspective: 300px;
+  position: relative;
+  margin-top: 100px;
+}
+
+#experiment {
+  transform-style: preserve-3d;
+  margin: 0px auto;
+  width: 400px;
+  height: 400px;
+  /* border: 1px solid black; */
+  display: block;
+  transform: rotateY(-15deg);
+}
+
+.block {
+}
+
+.block {
+  position: absolute;
+  border: 1px solid black;
+  width: $elWidth;
+  height: $elHeight;
+  display: inline-block;
+  overflow: visible;
+  font-size: 250%;
+  text-align: center;
+
+  transition: transform 2s;
+
+  @for $i from -20 through 20 {
+    &.x#{$i} {
+      left: ($elWidth+$elMargin) * $i;
+    }
+    &.y#{$i} {
+      top: ($elHeight+$elMargin) * $i;
+    }
+  }
+
+}
+
+.square.move {
+  transition: all 3s ease 1s;
+  transform: translate3d(0, 0, -300px);
+}
